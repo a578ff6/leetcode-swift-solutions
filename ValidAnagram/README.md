@@ -30,9 +30,9 @@ Anagram 指的是：由**相同字母、數量也一致**，只是順序不同�
 ```swift
 class Solution {
     func isAnagram(_ s: String, _ t: String) -> Bool {
-        if s.count != t.count {
-            return false
-        }
+        
+        // 長度不同，直接 return false（提早結束）
+        if s.count != t.count { return false }
         
         let sortedS = s.sorted()
         let sortedT = t.sorted()
@@ -72,26 +72,25 @@ class Solution {
 ```swift
 class Solution {
     func isAnagram(_ s: String, _ t: String) -> Bool {
-        if s.count != t.count {
-            return false
-        }
         
+        // 長度不同，直接 return false（提早結束）
+        if s.count != t.count { return false }
+        
+        // 建立一個字典，用來記錄 s 中每個字母的出現次數
         var dict = [Character: Int]()
-        
         for char in s {
             dict[char, default: 0] += 1
         }
         
+        // 遍歷 t，每遇到一個字母就從 dict 裡扣除
         for char in t {
-            guard let count = dict[char] else {
-                return false    // 沒有這個字母
+            // 若該字母不存在，或已經扣到底（< 0），代表不是 anagram
+            guard let count = dict[char], count > 0 else {
+                return false
             }
             
-            guard count > 0 else {
-                return false    // 已經扣到底了
-            }
-            
-            dict[char] = count - 1  // 字母存在，扣除一次
+            // 字母存在，扣除一次
+            dict[char] = count - 1
         }
         
         return true
