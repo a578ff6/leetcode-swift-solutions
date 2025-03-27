@@ -8,3 +8,4 @@
 |------|--------------|----------------------------------|---------------------------------|
 | #1   | Two Sum      | [程式碼](./TwoSum/two_sum.swift) | [筆記](./TwoSum/README.md)     |
 | #242 | Valid Anagram| [程式碼](./ValidAnagram/valid_anagram.swift) | [筆記](./ValidAnagram/README.md) |
+| #344 | Reverse String | [程式碼](./ReverseString/reverse_string.swift) | [筆記](./ReverseString/README.md) |
