@@ -43,13 +43,13 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 }
 ```
 
+---
+
 ### 1-3 Swift 語法複習
 
 - for i in 0..<nums.count：基本的 for loop ，從 0 走到 nums 最後一個 index
 - for j in i+1..<nums.count：從下一個開始，避免重複配對或選到同一個元素
 - return [i, j]：可以直接回傳一個整數陣列
-
-
 
 ---
 
@@ -62,6 +62,8 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 
 📌 如果我能記住我走過的數字，我是不是只需要一層迴圈就能解決問題？這就是 HashMap 解法的核心。
 
+---
+
 ### 2-2 解法思路
 
 1. 建立一個空的 `dict: [Int: Int]`  
@@ -70,6 +72,8 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 4. 查 Dictionary 裡有沒有 complement：  
    - 有 → 回傳 `[dict[complement]!, i]`
    - 沒有 → 將 `num: i` 加進 dict，繼續走
+
+---
 
 ### 2-3 Swift 程式碼
 
@@ -88,6 +92,8 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     return []
 }
 ```
+
+---
 
 ### 2-4 Swift 語法複習
 

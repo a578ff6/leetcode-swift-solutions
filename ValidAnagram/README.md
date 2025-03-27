@@ -42,6 +42,8 @@ class Solution {
 }
 ```
 
+---
+
 ### 1-3 Swift 語法複習
 
 - .sorted()：可以直接對字串使用，回傳排序後的字元陣列 [Character]
@@ -97,6 +99,8 @@ class Solution {
     }
 }
 ```
+
+---
 
 ### 2-3 Swift 語法複習
 
