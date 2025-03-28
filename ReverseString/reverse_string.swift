@@ -24,6 +24,7 @@ class Solution {
 
 // MARK: - 測試一
 
+let solution = Solution()
 var s: [Character] = ["h", "e", "l", "l", "o"]
-reverseString(&s)
+solution.reverseString(&s)
 print(s) // ➜ ["o", "l", "l", "e", "h"]
