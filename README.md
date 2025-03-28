@@ -10,3 +10,4 @@
 | #242 | Valid Anagram| [程式碼](./ValidAnagram/valid_anagram.swift) | [筆記](./ValidAnagram/README.md) |
 | #344 | Reverse String | [程式碼](./ReverseString/reverse_string.swift) | [筆記](./ReverseString/README.md) |
 | #125 | Valid Palindrome | [程式碼](./ValidPalindrome/valid_palindrome.swift) | [筆記](./ValidPalindrome/README.md) |
+| #217 | Contains Duplicate | [程式碼](./ContainsDuplicate/contains_duplicate.swift) | [筆記](./ContainsDuplicate/README.md) |
