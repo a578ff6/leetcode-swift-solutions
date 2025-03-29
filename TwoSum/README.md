@@ -47,9 +47,9 @@ func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 
 ### 1-3 Swift 語法複習
 
-- for i in 0..<nums.count：基本的 for loop ，從 0 走到 nums 最後一個 index
-- for j in i+1..<nums.count：從下一個開始，避免重複配對或選到同一個元素
-- return [i, j]：可以直接回傳一個整數陣列
+- `for i in 0..<nums.count`：基本的 for loop ，從 0 走到 nums 最後一個 index
+- `for j in i+1..<nums.count`：從下一個開始，避免重複配對或選到同一個元素
+- `return [i, j]`：可以直接回傳一個整數陣列
 
 ---
 

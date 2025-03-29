@@ -74,9 +74,9 @@ func reverseString(_ s: inout [Character]) {
 
 ### 1-3 Swift 語法複習
 
-- inout：代表參數會被修改（直接作用在原陣列）
-- s.swapAt(i, j)：Swift 提供的陣列元素交換方法
-- while left < right：常見的 Two Pointers
+- `inout`：代表參數會被修改（直接作用在原陣列）
+- `s.swapAt(i, j)`：Swift 提供的陣列元素交換方法
+- `while left < right`：常見的 Two Pointers
 
 ---
 

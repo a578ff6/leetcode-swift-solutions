@@ -112,10 +112,10 @@ func isPalindrome(_ s: String) -> Bool {
 
 ### 1-3 Swift 語法補充
 
-- .lowercased()：把整段字串轉成小寫，方便統一比對
-- .isLetter、.isNumber：判斷字元是否為字母 / 數字
-- Array(s)：把字串轉成可用 index 存取的字元陣列
-- while + continue：跳過不需要比對的字元
+- `.lowercased()`：把整段字串轉成小寫，方便統一比對
+- `.isLetter、.isNumber`：判斷字元是否為字母 / 數字
+- `Array(s)`：把字串轉成可用 index 存取的字元陣列
+- `while + continue`：跳過不需要比對的字元
 
 ---
 

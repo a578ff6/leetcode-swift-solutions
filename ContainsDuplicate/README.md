@@ -91,9 +91,9 @@ func containsDuplicate(_ nums: [Int]) -> Bool {
 
 ### 1-3 Swift 語法補充
 
-- Set<Int>()：用來儲存不重複的整數
-- .contains()：檢查 Set 中是否已有該元素
-- .insert()：加入元素到 Set 中（不會加入重複的值）
+- `Set<Int>()`：用來儲存不重複的整數
+- `.contains()`：檢查 Set 中是否已有該元素
+- `.insert()`：加入元素到 Set 中（不會加入重複的值）
 
 ---
 

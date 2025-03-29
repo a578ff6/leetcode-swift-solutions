@@ -11,3 +11,4 @@
 | #344 | Reverse String | [程式碼](./ReverseString/reverse_string.swift) | [筆記](./ReverseString/README.md) |
 | #125 | Valid Palindrome | [程式碼](./ValidPalindrome/valid_palindrome.swift) | [筆記](./ValidPalindrome/README.md) |
 | #217 | Contains Duplicate | [程式碼](./ContainsDuplicate/contains_duplicate.swift) | [筆記](./ContainsDuplicate/README.md) |
+| #283 | Move Zeroes      | [程式碼](./MoveZeroes/move_zeroes.swift) | [筆記](./MoveZeroes/README.md) |
