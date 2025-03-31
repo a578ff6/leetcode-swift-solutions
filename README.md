@@ -13,3 +13,4 @@
 | #217 | Contains Duplicate | [程式碼](./ContainsDuplicate/contains_duplicate.swift) | [筆記](./ContainsDuplicate/README.md) |
 | #283 | Move Zeroes      | [程式碼](./MoveZeroes/move_zeroes.swift) | [筆記](./MoveZeroes/README.md) |
 | #387 | First Unique Character in a String | [程式碼](./FirstUniqueCharacter/first_unique_character.swift) | [筆記](./FirstUniqueCharacter/README.md) |
+| #26  | Remove Duplicates from Sorted Array | [程式碼](./RemoveDuplicates/remove_duplicates.swift) | [筆記](./RemoveDuplicates/README.md) |
