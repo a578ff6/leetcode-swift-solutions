@@ -93,7 +93,7 @@ func strStr(_ haystack: String, _ needle: String) -> Int {
 - 將 haystack 和 needle 各轉成 [Character]
 - 外層用 i 滑動 haystack，逐格嘗試從該位置比對 needle
 - 內層用 j 比對 needle 與 haystack 子字串是否一樣
-- 若整段都相等 → 回傳 i
+- 若 haystack[i + j] 與 needle[j] 都一致，代表成功找到匹配 → 回傳 i
 - 否則比對失敗就繼續下一格滑動
 
 ---
@@ -105,6 +105,7 @@ func strStr(_ haystack: String, _ needle: String) -> Int {
 
 | 步驟 | 說明 |
 |------|------|
+| 0️⃣ | 若 needle 長度 > haystack，直接回傳 -1（提前防止 crash） |
 | 1️⃣ | 把 `haystack`、`needle` 各轉為陣列 |
 | 2️⃣ | 使用 `i` 遍歷 `haystack`，最多到 `haystack.count - needle.count` |
 | 3️⃣ | 每次嘗試比對 `haystack[i + j]` 與 `needle[j]` |
@@ -123,16 +124,20 @@ func strStr(_ haystack: String, _ needle: String) -> Int {
     // 如果 needle 是空字串，根據題目要求要回傳 0
     if needle.isEmpty { return 0 }
     
-    // 先把字串轉成 [Character] 陣列，好處是可以用 index 直接存取
+    // 將字串轉換為 [Character] 陣列，方便使用索引進行比對
     let haystackArray = Array(haystack)
     let needleArray = Array(needle)
     
-    // 外層迴圈：從 haystack 開始逐格滑動，每次檢查 needle 長度的區段
-    for i in 0...(haystackArray.count - needleArray.count) {
+    // 防呆檢查：如果 needle 比 haystack 還長，一定無法匹配 → 回傳 -1
+    if needleArray.count > haystackArray.count { return -1 }
+    
+    // 外層迴圈：用 i 當作 haystack 的起始比對位置，從 haystack 開始逐格滑動，每次檢查 needle 長度的區段
+    // 只需要走到 haystack.count - needle.count 為止
+    for i in 0..<(haystackArray.count - needleArray.count + 1) {
         
         var match = true
         
-        // 內層迴圈：比對目前區段內的每個字元
+        // 內層迴圈：用 j 去比對 needle 目前區段內的每一個字元
         for j in 0..<needleArray.count {
             
             // 每次都比對 haystack 從 i 開始的子字元與 needle 對應位置
@@ -185,10 +190,10 @@ func strStr(_ haystack: String, _ needle: String) -> Int {
 - 比對過程中，只要出現一個不符，就立即中止這一輪比對，直接進入下一個起點。
 
 ```swift
-for i in 0... {
-    for j in 0..<needle.count {
-        if haystack[i + j] != needle[j] {
-            break // 有任一字元不符合就跳出
+for i in 0..<(haystackArray.count - needleArray.count + 1) {
+    for j in 0..<needleArray.count {
+        if haystackArray[i + j] != needleArray[j] {
+            break // 只要有一個字元不相等，就不比了
         }
     }
 }
@@ -201,6 +206,19 @@ for i in 0... {
 | 0 | `"he"` ← `haystack[0+0] = h`, `needle[0] = l` ❌ 不符 | 繼續滑動 |
 | 1 | `"el"` ← `haystack[1+0] = e`, `needle[0] = l` ❌ 不符 | 繼續滑動 |
 | 2 | `"ll"` ← `haystack[2+0] = l`, `needle[0] = l` ✅<br>`haystack[2+1] = l`, `needle[1] = l` ✅ | ✅ 完整比對 → 回傳 2 |
+
+---
+
+### ⚠️ 2–6 Crash 原因與修正方式
+
+- 在部分邊界測資（如 `haystack = "a"`、`needle = "ab"`）中，
+- 若沒有加入「`needle.count > haystack.count`」的條件判斷，就會導致越界存取（runtime error）。
+
+因此補上這段防呆邏輯
+
+```swift
+if needleArray.count > haystackArray.count { return -1 }
+```
 
 ---
 

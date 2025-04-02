@@ -39,18 +39,22 @@ class SolutionTwo {
         // 如果 needle 是空字串，根據題目要求要回傳 0
         if needle.isEmpty { return 0 }
         
-        // 先把字串轉成 [Character] 陣列，好處是可以用 index 直接存取
+        // 將字串轉換為 [Character] 陣列，方便使用索引進行比對
         let haystackArray = Array(haystack)
         let needleArray = Array(needle)
         
-        // 外層迴圈：從 haystack 開始逐格滑動，每次檢查 needle 長度的區段
-        for i in 0...(haystackArray.count - needleArray.count) {
-            
+        // 防呆檢查：如果 needle 比 haystack 還長，一定無法匹配 → 回傳 -1
+        if needleArray.count > haystackArray.count { return -1 }
+        
+        // 外層迴圈：用 i 當作 haystack 的起始比對位置，從 haystack 開始逐格滑動，每次檢查 needle 長度的區段
+        // 只需要走到 haystack.count - needle.count 為止
+        for i in 0..<(haystackArray.count - needleArray.count + 1) {
+
             var match = true
             
-            // 內層迴圈：比對目前區段內的每個字元
+            // 內層迴圈：用 j 去比對 needle 目前區段內的每一個字元
             for j in 0..<needleArray.count {
-                
+
                 // 每次都比對 haystack 從 i 開始的子字元與 needle 對應位置
                 // i + j：代表目前在 haystack 要比對的實際位置
                 // j：代表在 needle 中的位置
