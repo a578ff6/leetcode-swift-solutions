@@ -2,7 +2,19 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：字串處理（String）、雜湊（Hash Table）
+- 難度：Easy
+- 練習重點：
+  - 字元出現次數統計
+  - 使用 Dictionary 做快速查找
+  - 搭配 `enumerated()` 回傳字元的 index
+
+---
+
 ## 📝 題目連結  
+
 [https://leetcode.com/problems/first-unique-character-in-a-string](https://leetcode.com/problems/first-unique-character-in-a-string)
 
 ---

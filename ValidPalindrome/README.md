@@ -2,6 +2,17 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：字串處理（String）、雙指標（Two Pointers）
+- 難度：Easy
+- 練習重點：
+  - 練習字串清洗（保留英數字元、轉小寫）
+  - 使用雙指標比對字元是否對稱
+  - 理解回文（Palindrome）的定義與變形題邏輯
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/valid-palindrome](https://leetcode.com/problems/valid-palindrome)

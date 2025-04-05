@@ -1,5 +1,16 @@
 # LeetCode #1 - Two Sum（Swift 解法）
 
+## 📂 題目分類
+
+- 題型：Array 操作、Hash Table
+- 難度：Easy
+- 練習重點：
+  - 練習雙層迴圈暴力解法的基本邏輯
+  - 學會使用 Dictionary（HashMap）提升搜尋效率
+  - 理解補數（complement）與查表思維的應用
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/two-sum](https://leetcode.com/problems/two-sum)

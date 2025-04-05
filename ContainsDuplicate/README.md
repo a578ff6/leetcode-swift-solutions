@@ -2,6 +2,17 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：Array 操作、重複檢查
+- 難度：Easy
+- 練習重點：
+  - 熟悉 Set 資料結構的用法
+  - 練習用 `.contains()` 和 `.insert()` 來判斷是否重複
+  - 培養用空間換時間的直覺（Hash 結構效率高）
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/contains-duplicate](https://leetcode.com/problems/contains-duplicate)

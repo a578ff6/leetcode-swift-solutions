@@ -2,7 +2,19 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：String 操作、子字串搜尋
+- 難度：Easy
+- 練習重點：
+  - 使用 Swift 的 `range(of:)` 找子字串出現位置
+  - 練習逐格比對（Sliding Window + Nested Loop）
+  - 處理邊界情況（空字串、長度不符）
+
+---
+
 ## 📝 題目連結  
+
 [https://leetcode.com/problems/implement-strstr](https://leetcode.com/problems/implement-strstr)
 
 ---

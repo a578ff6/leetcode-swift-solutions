@@ -2,6 +2,17 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：Array 操作、Two Pointers
+- 難度：Easy
+- 練習重點：
+  - 練習使用雙指標（Two Pointers）左右交換
+  - 遵守 in-place（原地修改）與 O(1) 空間限制
+  - 理解陣列交換技巧與 while 迴圈操作
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/reverse-string](https://leetcode.com/problems/reverse-string)

@@ -2,6 +2,17 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：字串處理（String）、Hash Table
+- 難度：Easy
+- 練習重點：
+  - 練習使用 `.sorted()` 來進行字串比較
+  - 熟悉 Dictionary 的計數操作與 default 值寫法
+  - 比較兩種方法的效率差異（排序 vs. 統計字數）
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/valid-anagram](https://leetcode.com/problems/valid-anagram)

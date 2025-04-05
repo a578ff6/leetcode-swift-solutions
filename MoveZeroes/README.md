@@ -2,6 +2,17 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：Array 操作、Two Pointers 雙指標
+- 難度：Easy
+- 練習重點：
+  - 練習使用雙指標（Two Pointers）來處理 in-place 問題
+  - 熟悉陣列操作與條件搬移邏輯
+  - 確保結果不開新陣列、符合 in-place 限制
+
+---
+
 ## 📝 題目連結
 
 [https://leetcode.com/problems/move-zeroes](https://leetcode.com/problems/move-zeroes)

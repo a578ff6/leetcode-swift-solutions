@@ -2,7 +2,19 @@
 
 ---
 
+## 📂 題目分類
+
+- 題型：Array 操作、雙指標（Two Pointers）
+- 難度：Easy
+- 練習重點：
+  - 練習使用「雙指標」技巧在排序陣列中處理元素
+  - 原地修改陣列、追蹤不重複元素位置
+  - 理解 in-place 操作如何在 O(1) 空間內達成目標
+
+---
+
 ## 📝 題目連結  
+
 [https://leetcode.com/problems/remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
 
 ---
