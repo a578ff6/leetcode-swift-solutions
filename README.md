@@ -16,3 +16,4 @@
 | #26  | Remove Duplicates from Sorted Array | [程式碼](./RemoveDuplicates/remove_duplicates.swift) | [筆記](./RemoveDuplicates/README.md) |
 | #28  | Implement strStr() | [程式碼](./ImplementStrStr/implement_strstr.swift) | [筆記](./ImplementStrStr/README.md) |
 | #35  | Search Insert Position | [程式碼](./SearchInsertPosition/search_insert_position.swift) | [筆記](./SearchInsertPosition/README.md) |
+| #20  | Valid Parentheses | [程式碼](./ValidParentheses/valid_parentheses.swift) | [筆記](./ValidParentheses/README.md) |
