@@ -49,7 +49,7 @@ class SolutionTwo {
         while left <= right {
             
             // 每次都從中間開始比對（折半）
-            var mid = (left + right) / 2
+            let mid = (left + right) / 2
             
             // 如果剛好找到 target，就直接回傳中間位置
             // 找到 target，直接回傳位置
