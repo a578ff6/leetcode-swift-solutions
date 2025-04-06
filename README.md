@@ -17,3 +17,4 @@
 | #28  | Implement strStr() | [程式碼](./ImplementStrStr/implement_strstr.swift) | [筆記](./ImplementStrStr/README.md) |
 | #35  | Search Insert Position | [程式碼](./SearchInsertPosition/search_insert_position.swift) | [筆記](./SearchInsertPosition/README.md) |
 | #20  | Valid Parentheses | [程式碼](./ValidParentheses/valid_parentheses.swift) | [筆記](./ValidParentheses/README.md) |
+| #155 | Min Stack         | [程式碼](./MinStack/min_stack.swift)             | [筆記](./MinStack/README.md)           |
