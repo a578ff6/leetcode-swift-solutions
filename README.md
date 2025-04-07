@@ -18,3 +18,4 @@
 | #35  | Search Insert Position | [程式碼](./SearchInsertPosition/search_insert_position.swift) | [筆記](./SearchInsertPosition/README.md) |
 | #20  | Valid Parentheses | [程式碼](./ValidParentheses/valid_parentheses.swift) | [筆記](./ValidParentheses/README.md) |
 | #155 | Min Stack         | [程式碼](./MinStack/min_stack.swift)             | [筆記](./MinStack/README.md)           |
+| #232 | Implement Queue using Stacks | [程式碼](./ImplementQueueUsingStacks/implement_queue_using_stacks.swift) | [筆記](./ImplementQueueUsingStacks/README.md) |
